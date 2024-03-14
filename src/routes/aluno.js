@@ -1,5 +1,9 @@
 const alunoController = require ('../controllers/aluno');
 
 module.exports = (app) => {
-    app.get('/aluno/:name', alunoController.getAluno)
+    app.get('/aluno', alunoController.getAluno)
+    app.post('/aluno', alunoController.postAlunos)
+    app.delete('/aluno/:id', alunoController.deleteAlunos)
+    app.put('/aluno/:id', alunoController.putAlunos)
+    app.patch('/aluno/:id', alunoController.patchAlunos)
 }
