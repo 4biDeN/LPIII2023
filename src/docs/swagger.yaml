@@ -112,7 +112,19 @@
         ],
         "responses": {
           "201": {
-            "description": "Criado"
+            "description": "Criado",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "mensagem": {
+                  "type": "string",
+                  "example": "Cadastro Incluido com Sucesso!"
+                }
+              },
+              "xml": {
+                "name": "main"
+              }
+            }
           },
           "400": {
             "description": "Bad Request",

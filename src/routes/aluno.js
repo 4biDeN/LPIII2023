@@ -48,6 +48,12 @@ module.exports = (app) => {
                 observador: "Pai ta ON"
             }
         }
+         #swagger.responses[201] = {
+            description: 'Criado',
+            schema: {
+                mensagem: 'Cadastro Incluido com Sucesso!'
+            }
+        }    
         #swagger.responses[400] = {
             description: 'Bad Request',
             schema: {
