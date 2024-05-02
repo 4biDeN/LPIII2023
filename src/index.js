@@ -22,5 +22,5 @@ app.listen(port)//, () => {
 
 app.get('/', (req,res) => {
     res.cookie('meuCookie2024', 'e bom');
-    res.send('Hello World!'); 
+    res.send('API HORUS UP!'); 
 });

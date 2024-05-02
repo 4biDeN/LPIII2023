@@ -18,4 +18,6 @@ function comparePassword(storedPassword, salt, providedPassword) {
     const hash = hashPassword(providedPassword, salt)
     return hash === storedPassword
 }
+
 module.exports.criarUsuario = criarUsuario;
+module.exports.comparePassword = comparePassword;
